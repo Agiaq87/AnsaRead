@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7178E70824A8CF24000CB821 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178E70724A8CF24000CB821 /* Card.swift */; };
+		7178E70C24A8F32E000CB821 /* ErrorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178E70B24A8F32E000CB821 /* ErrorCard.swift */; };
 		71B5255924A50DC3006386A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5255824A50DC3006386A2 /* AppDelegate.swift */; };
 		71B5255B24A50DC3006386A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5255A24A50DC3006386A2 /* SceneDelegate.swift */; };
 		71B5255D24A50DC3006386A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5255C24A50DC3006386A2 /* ContentView.swift */; };
@@ -15,6 +17,9 @@
 		71B5256524A50DC7006386A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71B5256324A50DC7006386A2 /* LaunchScreen.storyboard */; };
 		71B5257024A50DC7006386A2 /* AnsaReadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5256F24A50DC7006386A2 /* AnsaReadTests.swift */; };
 		71B5257B24A50DC7006386A2 /* AnsaReadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5257A24A50DC7006386A2 /* AnsaReadUITests.swift */; };
+		71B5258A24A50DE4006386A2 /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 71B5258924A50DE4006386A2 /* FeedKit */; };
+		71B5258E24A50E0D006386A2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5258D24A50E0D006386A2 /* Environment.swift */; };
+		71B5259024A50E27006386A2 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5258F24A50E27006386A2 /* Title.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7178E70724A8CF24000CB821 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7178E70B24A8F32E000CB821 /* ErrorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCard.swift; sourceTree = "<group>"; };
 		71B5255524A50DC3006386A2 /* AnsaRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnsaRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B5255824A50DC3006386A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B5255A24A50DC3006386A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,8 @@
 		71B5257624A50DC7006386A2 /* AnsaReadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnsaReadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B5257A24A50DC7006386A2 /* AnsaReadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsaReadUITests.swift; sourceTree = "<group>"; };
 		71B5257C24A50DC7006386A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71B5258D24A50E0D006386A2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		71B5258F24A50E27006386A2 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B5258A24A50DE4006386A2 /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +109,10 @@
 		71B5255724A50DC3006386A2 /* AnsaRead */ = {
 			isa = PBXGroup;
 			children = (
+				71B5258C24A50DFC006386A2 /* ViewModel */,
+				71B5258B24A50DEB006386A2 /* View */,
 				71B5255824A50DC3006386A2 /* AppDelegate.swift */,
 				71B5255A24A50DC3006386A2 /* SceneDelegate.swift */,
-				71B5255C24A50DC3006386A2 /* ContentView.swift */,
 				71B5255E24A50DC7006386A2 /* Assets.xcassets */,
 				71B5256324A50DC7006386A2 /* LaunchScreen.storyboard */,
 				71B5256624A50DC7006386A2 /* Info.plist */,
@@ -136,6 +147,25 @@
 			path = AnsaReadUITests;
 			sourceTree = "<group>";
 		};
+		71B5258B24A50DEB006386A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71B5255C24A50DC3006386A2 /* ContentView.swift */,
+				71B5258F24A50E27006386A2 /* Title.swift */,
+				7178E70724A8CF24000CB821 /* Card.swift */,
+				7178E70B24A8F32E000CB821 /* ErrorCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		71B5258C24A50DFC006386A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71B5258D24A50E0D006386A2 /* Environment.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +182,9 @@
 			dependencies = (
 			);
 			name = AnsaRead;
+			packageProductDependencies = (
+				71B5258924A50DE4006386A2 /* FeedKit */,
+			);
 			productName = AnsaRead;
 			productReference = 71B5255524A50DC3006386A2 /* AnsaRead.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +257,9 @@
 				Base,
 			);
 			mainGroup = 71B5254C24A50DC3006386A2;
+			packageReferences = (
+				71B5258824A50DE4006386A2 /* XCRemoteSwiftPackageReference "FeedKit" */,
+			);
 			productRefGroup = 71B5255624A50DC3006386A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,7 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B5259024A50E27006386A2 /* Title.swift in Sources */,
+				7178E70824A8CF24000CB821 /* Card.swift in Sources */,
 				71B5255924A50DC3006386A2 /* AppDelegate.swift in Sources */,
+				7178E70C24A8F32E000CB821 /* ErrorCard.swift in Sources */,
+				71B5258E24A50E0D006386A2 /* Environment.swift in Sources */,
 				71B5255B24A50DC3006386A2 /* SceneDelegate.swift in Sources */,
 				71B5255D24A50DC3006386A2 /* ContentView.swift in Sources */,
 			);
@@ -594,6 +634,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71B5258824A50DE4006386A2 /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71B5258924A50DE4006386A2 /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71B5258824A50DE4006386A2 /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71B5254D24A50DC3006386A2 /* Project object */;
 }

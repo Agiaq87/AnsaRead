@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  AnsaRead
+//  Title.swift
+//  AnsaReader
 //
 //  Created by Alessandro Giaquinto on 25/06/2020.
 //  Copyright © 2020 Alessandro Giaquinto. All rights reserved.
@@ -8,14 +8,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Title: View {
     var body: some View {
-        Text("Hello, World!")
+        Image("logo.png")
+            .padding(.horizontal)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Title_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Title()
     }
 }
