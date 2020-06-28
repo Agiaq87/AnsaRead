@@ -41,7 +41,7 @@ struct Card: View {
             }
             Spacer()
         }
-        .padding(.all, 10.0)
+        //.padding(.all, 10.0)
         //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
 }

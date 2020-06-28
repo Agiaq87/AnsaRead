@@ -22,7 +22,9 @@ struct ContentView: View {
                     Section(content: {
                         HStack(alignment: .top){
                             Image(systemName: "house.fill")
+                            .resizable()
                                 .foregroundColor(Color.green)
+                                .frame(width: 25.0, height: 25.0)
                             Text("Homepage")
                         }
                     })
